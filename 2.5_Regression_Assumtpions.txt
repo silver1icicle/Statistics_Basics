@@ -1,0 +1,62 @@
+Linear regression is an analysis that assesses whether one or more predictor variables/IV explain the dependent variable/DV.  The regression has five key assumptions:
+
+1. Linear relationship: 
+========================= 
+The relationship between the IV and the DV should be linear. This can be tested by plotting a scatter plot. Since the linear regression is sensitive to outliers, we need to take care of that aswell. 
+
+
+
+
+2. Multivariate normality:
+========================= 
+Linear regression analysis requires all variables to be multivariate normal. This assumption can be checked via a histogram or a Q-Q-Plot. If the data is not normal, we need to apply a Non-Linear transformation such as Log-Transformation, to fix the issue.
+
+
+
+
+3. No or little multicollinearity:
+===================================
+Linear Regression wants that there should be little or no multicollinearity in the data. Multicollinarity occurs when the IV are too highly correlated with each other. Multicollinearity can be tested using 3 ways:
+    3.1] Correlation Matrix: Construct a correlation matrix among all IV. The correlations between them should be low i.e. less than 1. 
+    3.2] Tolerance: The tolerance measures the influence of one IV on all other IV. 
+                    Tolerance => T = 1 - R^2
+         Thumb-rule:
+         1] If T < 0.1     ........ there might be multicollinearity in data. 
+         2] If T < 0.01    ........ there certainly is multicollinarity in data
+         
+    3.3] Variance Inflation Factor (VIF): The Variance Inflation Factor for the linear regression is defined as:
+                    VIF = 1/T
+         Thumb-rule:
+         1] If VIF > 10    ........ there might be multicollinearity in data. 
+         2] If VIF > 100   ........ there certainly is multicollinarity in data.
+
+Remedy: 1. If multicollinearity is found in data, centering the data, i.e. subtracting the mean of the variable from each score, might help  
+        to solve the problem. 
+        
+        2. Simplest way: Eliminate variables with high VIF values.
+        
+
+
+
+4. No auto-correlation
+======================
+Linear regression analysis requires that there is little or no autocorrelation. Autocorrelation occurs when the residuals are not independent from each other [OR] when the value of Y(For x+1) is dependent on the value of Y(X).  
+For e.g. in Stock prices, the current price is not independent from the previous price. 
+We can check for autocorrelation with the Durbin-Watson Test. 
+
+
+
+5. Homoscedasticity
+===================
+Homoscedasticity: Residuals are equal across the regression line. 
+The best way to check for homoscedasticity is a scatter plot. 
+
+
+
+
+
+Thumbrule:
+============
+Sample size: 
+============
+In Linear regression the sample size rule of thumb is that the regression analysis requires at least 20 cases per independent variable in the analysis.
