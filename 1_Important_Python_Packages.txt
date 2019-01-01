@@ -1,0 +1,20 @@
+The commonly used Python Packages:
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+
+1. NumPy: Its a third party package which enables us to work with multidimensional arrays. 
+
+2. Pandas: Allows us to organize data in tabular format and to attach descriptive labels to rows and columns of the table. 
+           Important package for doing any Data science project. 
+
+3. Matplotlib: Its a 2 dimensional plotting library especially designed for visualization of NumPy computations. 
+
+4. SciPy: Its a larger group of libraries which comprise of NumPy + Pandas + Matplotlib. Its an entire ecosystem, which contains lots of tools           for scientific calculations suitable for the field of ML, Mathematics and Engineering. 
+
+5. Seaborn: Python Visualization library based on Matplotlib. It provides high level interface for drawing attractive statistical graphics. 
+
+6. StatsModel: Its another model built on top of NumPy and SciPy. It also integrates with Pandas. StatsModels provides excellent summaries. 
+               Used speciaifically for regression analysis. 
+               
+7. scikit-learn (or sklearn): One of the most commonly used ML libraries. 
+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
