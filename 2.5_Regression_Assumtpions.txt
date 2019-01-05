@@ -2,7 +2,12 @@ Linear regression is an analysis that assesses whether one or more predictor var
 
 1. Linear relationship: 
 ========================= 
-The relationship between the IV and the DV should be linear. This can be tested by plotting a scatter plot. Since the linear regression is sensitive to outliers, we need to take care of that aswell. 
+The relationship between the IV and the DV should be linear. This can be tested by plotting a scatter plot. Since the linear regression is sensitive to outliers, we need to take care of that aswell. If the scatter plot reveals that the relationship is non-linear, there are 2 approaches ahead:
+    1.1] Apply a suitable non-linear regression
+    1.2] Transform the data using:
+        1.2.1] Log transformation
+        1.2.2] Exponential transformation.
+        Once the data is transformed...then ONLY apply linear regression. 
 
 
 
@@ -52,6 +57,23 @@ Homoscedasticity: Residuals are equal across the regression line.
 The best way to check for homoscedasticity is a scatter plot. 
 
 
+6. No Endogeneity of regressors
+===============================
+I.e. there should be no correlation between the IV and the errors. It is also referred to as the OVB i.e. Omitted variable bias.
+Error = Difference between the observed values and the predicted values. 
+OVB occurs when our model fails to consider a relevant variable. 
+For e.g. Consider a model which tries to predict the price of an apartment in NY based on its size. We get the following equation:
+            
+            y_hat = 1125786 - 132100 x_size
+         
+         From this equation, we infer that smaller the size of the house, greater is its price. This is extremely counter intuitive and 
+         biased. We see that the covariance of the error term and the IV is not zero. Our model is missing something crucial i.e. 'Location' 
+         of the house. 
+         OVB is hard to fix and need thorough examination. The revised regression equation:
+           
+            y_hat = 520365 + 786210 * x_size + 799779 * x_location
+         
+         Now the model seems logical. 
 
 
 
